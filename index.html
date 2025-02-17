@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Cocina</title>
+    <link rel="stylesheet" href="./CSS/STYLE.CSS">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <img src="./IMG/logo.svg" alt="Logo de la Escuela de Cocina" class="logo">
+        <h1>Escuela de Cocina</h1>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar recetas, clases...">
+            <button class="search-button">Buscar</button>
+        </div>
+        <div class="relleno">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#instructores">Instructores</a></li>
+                    <li><a href="#clases">Clases</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a Nuestra Escuela de Cocina</h2>
+            <h3>Aprende a cocinar deliciosos platillos y mejora tus habilidades culinarias con nuestras clases y recetas.</h3>
+            <div class="clase1">
+                <h2>Clases Destacadas:</h2>
+            </div>
+           
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide" id="slide1">
+                        <img src="./IMG/clase3.jpg" alt="Clase de cocina 1">
+                        <div class="info">Clase 1</div>
+                    </div>
+                    <div class="carousel-slide" id="slide2">
+                        <img src="./IMG/clase4.jpg" alt="Clase de cocina 2">
+                        <div class="info">Clase 2</div>
+                    </div>
+                    <div class="carousel-slide" id="slide3">
+                        <img src="./IMG/clase5.jpg" alt="Clase de cocina 3">
+                        <div class="info">Clase 3</div>
+                    </div>
+                    <div class="carousel-slide" id="slide4">
+                        <img src="./IMG/clase6.jpg" alt="Clase de cocina 4">
+                        <div class="info">Clase 4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separador">
+            <img src="./IMG/separador.png" alt="Separador">
+        </div>
+
+        <section id="instructores">
+            <h2>Aprende a Cocinar con los Mejores Instructores:</h2>
+            <div class="clase-lista">
+                
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide" id="slide1">
+                        <img src="./IMG/instructor.jpg" alt="Clase de cocina 1">
+                        <div class="info">AIDA MERLANO</div>
+                    </div>
+                    <div class="carousel-slide" id="slide2">
+                        <img src="./IMG/instructor2.jpg" alt="Clase de cocina 2">
+                        <div class="info">FEDERIKO SUAREZ</div>
+                    </div>
+                    <div class="carousel-slide" id="slide3">
+                        <img src="./IMG/instrucor 3.jpg" alt="Clase de cocina 3">
+                        <div class="info">CLIN HAISTAIN</div>
+                    </div>
+                    <div class="carousel-slide" id="slide4">
+                        <img src="./IMG/instructor 4.jpg" alt="Clase de cocina 4">
+                        <div class="info">GEORGINA MERCY</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separador">
+            <img src="./IMG/separador_alternativo.png" alt="Separador">
+        </div>
+
+        <section id="clases">
+            <h2>Nuestras Clases</h2>
+            <h3>Ofrecemos una variedad de clases para todos los niveles. Desde cocina básica hasta técnicas avanzadas.</h3>
+                
+            <div class="clase-lista">
+                <div class="card">
+                    <img src="./IMG/clase6.jpg" alt="Clases de Cocina Básica">
+                    <div class="card-content">
+                        <h3>Clases de Cocina Básica</h3>
+                        <p>Aprende los fundamentos de la cocina y cómo preparar platos simples y deliciosos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./IMG/clase2.jpg" alt="Clases de Cocina Básica">
+                    <div class="card-content">
+                        <h3>Clases de Cocina Alta Cocina</h3>
+                        <p>Aprende los fundamentos de la cocina y cómo preparar platos simples y deliciosos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./IMG/clase3.jpg" alt="Clases de Repostería">
+                    <div class="card-content">
+                        <h3>Clases de Repostería</h3>
+                        <p>Descubre el arte de la repostería y aprende a hacer postres irresistibles.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./IMG/clase1.jpg" alt="Clases de Cocina Internacional">
+                    <div class="card-content">
+                        <h3>Clases de Cocina Internacional</h3>
+                        <p>Viaja por el mundo a través de la cocina con nuestras clases de diferentes culturas.</p>
+                    </div>
+                </div>
+            </div>
+            <section id="registro">
+                <h2>Registro de Usuario</h2>
+                <div class="tab">
+                    <button class="tablinks active" onclick="openTab(event, 'registrarse')">Registrarse</button>
+                    <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar Sesión</button>
+                </div>
+            
+                <div id="registrarse" class="tabcontent active">
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                        <button type="submit">Registrar</button>
+                    </form>
+                </div>
+            
+                <div id="iniciar" class="tabcontent">
+                    <form>
+                        <label for="correo-login">Correo Electrónico:</label>
+                        <input type="email" id="correo-login" name="correo-login" required>
+                        <label for="contrasena-login">Contraseña:</label>
+                        <input type="password" id="contrasena-login" name="contrasena-login" required>
+                        <button type="submit">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </section>
+            
+        </section>
+        <div class="separador">
+            <img src="./IMG/separador.png" alt="Separador">
+        </div>
+        
+        <section id="porque">
+            <div class="Nosotros">
+                <h3>PORQUE ESTUDIAR CON NOSOTROS:</h3>
+                <img src="./IMG/icono_chef.png" alt="Chefs Especialistas"> 
+                <h2>TENEMOS LOS MEJORES CHEFS</h2>
+            </div>
+            <div class="Nosotros">  
+                <img src="./IMG/icono_menu.png" alt="Chefs Especialistas"> 
+                <h2>MENU SIEMPRE ACTUALIZADO</h2>
+            </div>
+            <div class="Nosotros">   
+                <img src="./IMG/icono_vino.png" alt="Chefs Especialistas"> 
+                <h2>INCLUYE TODO SOBRE BEBIDAS</h2>
+            </div>
+        </section>
+
+        <div class="separador">
+            <img src="./IMG/separador_alternativo.png" alt="Separador">
+        </div>
+
+        <section id="consejos">
+<div class="bloque">
+    <h2>CONSEJOS DE COCINA</h2>
+           
+            <div class="info"></div>
+        
+            <img src="./IMG/bloque_2.jpg">
+            <div class="info"></div>
+            <ul>
+                <h2> ingredientes frescos:
+                    La calidad de los ingredientes afecta el sabor final de la comida.
+                                 <strong>Lee la receta completa:</strong> Antes de empezar, asegúrate de entender todos los pasos.</li>
+                                 <strong>Organiza tu espacio:</strong> Tener todo a mano facilita el proceso de cocción.</li>
+                                 <strong>Prueba mientras cocinas:</strong> Ajusta los sabores a tu gusto.</li></h2>    
+            </ul>
+</div>
+           
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Escuela de Cocina. Todos los derechos reservados.</p>
+        <div>
+            <a href="#contacto">Contáctanos</a> |
+            <a href="#sobre">Sobre Nosotros</a>
+        </div>
+    </footer>
+</body>
+</html>

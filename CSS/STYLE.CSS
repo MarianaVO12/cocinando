@@ -1,0 +1,548 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #e6b6b6;
+    color: #fff;
+  }
+  
+.relleno {
+  padding: 3em;
+  width: 10;
+}
+  
+
+  .logo {
+    width: 90px;
+    height: 50px;
+    margin-right: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 38%;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 100rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration-color: #e07b7b;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.search-container {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 12px 20px;
+    border: 2px solid #ececec; 
+    border-radius: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+    outline: none; 
+    border-color: #ebebeb; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #e24e73;
+    color: white;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px; 
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-2px); /* Elevación al pasar el mouse */
+}
+
+.search-button:active {
+    transform: translateY(0); /* Regresa a su posición original al hacer clic */
+}
+  .Nosotros {
+    text-align: center;
+  }
+  .tab {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab button {
+    background-color: #e24e73;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab button:hover {
+    background-color: #e24e73;
+}
+
+.tabcontent {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid#e24e73;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.tabcontent.active {
+    display: block; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: #007BFF; /* Cambia el color del borde al enfocar */
+}
+
+form button {
+  background-color: #e24e73;
+  color: white;
+  border: none;
+  padding: 10px 15px
+}
+    
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.clase1 {
+    justify-content: center;
+}
+.separador {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .separador img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+  }
+
+.bloque {
+    justify-content: center;
+    width: 100;
+    text-align: center;
+}
+.bloque img {
+    overflow: hidden;
+}
+
+
+.instructor {
+    text-align: center;
+    
+}
+.instructor img {
+    border-radius: 5%;
+    width: 800px;
+    height: auto;
+}
+.instructor2 {
+    text-align: center;
+}
+.clase1 {
+    justify-content: center;
+    text-align: center;
+}
+.instructor2 img{
+border-radius: 5%;
+}
+.personas img {
+    width: 10%;
+    height: 10%;
+}
+.profesor img {
+    width: 20%;
+    height: 60%;
+}
+
+.clase-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 10px solid #e09b9b;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .clase-lista {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+/* .card:hover {
+    transform: scale(1.05);
+}
+.card {
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+  position: relative;
+    box-sizing: border-box;
+    background-color: #fff;
+    
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.card img {
+}
+
+.card-content {
+    padding: 20px;
+}
+ */
+ .card-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.card-content p {
+  margin: 0;
+  color: #555;
+}
+
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+  }
+  
+  /* Estilos para tabletas */
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Estilos para computadoras de escritorio */
+  
+  @media (min-width: 1025px) {
+    body {
+      font-size: 20px;
+    }
+    .container {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Estilos para la clase container */
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para la clase flex */
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para la clase imagen */
+  
+  .imagen {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+  }
+  
+  /* Estilos para la clase botón */
+  
+  .boton {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: #3e8e41;
+  }
+  
+
+  
+.logo {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    float: left;
+}
+
+header {
+    background: #e29494;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    color: #e29494;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    height: 530px;
+    border-radius: 1%;
+}
+
+.carousel {
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+.carousel-slide img {
+    border: 2px solid #e29494;
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    border-radius: 0%;
+    position: relative;
+}
+
+
+.info {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-slide:hover .info {
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.clase-item {
+    flex: 1;
+    margin: 0 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #e29494;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+} 
